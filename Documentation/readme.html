@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gems | Android - User Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="cubycode">
+
+    <!-- Google Web Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/80.png"/>
+
+
+
+    <!-- Bootstrap 3 Plan styles -->
+    <link id="plan-theme" href="assets/css/bootstrap.plan.amethyst.min.css" rel="stylesheet">
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <!-- Plan UI -->
+    <link id="plan-theme-extra" href="assets/css/plan.amethyst.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Docs Custom styles -->
+    <style>
+
+        body {
+          padding: 10px 0 0 0;
+        }
+        footer {
+          background-color: white;
+          border-top: 1px solid #ddd;
+          padding: 30px;
+          margin-top: 50px;
+        }
+        .row > [class*="col-"] {
+          margin-bottom: 30px;
+        }
+        .navbar-container {
+          position: relative;
+          min-height: 100px;
+        }
+        .navbar-container .navbar.navbar-fixed-top,
+        .navbar-container .navbar.navbar-fixed-bottom {
+          position: absolute;
+          top: 50px;
+          z-index: 0;
+        }
+        .navbar-container .navbar.navbar-fixed-top .container,
+        .navbar-container .navbar.navbar-fixed-bottom .container {
+          max-width: 90%;
+        }
+        .btn-group {
+          margin-bottom: 10px
+        }
+        .form-inline select,
+        .form-inline input[type="text"],
+        .form-inline input[type="password"] {
+          width: 180px;
+        }
+        .input-group {
+          margin-bottom: 10px;
+        }
+        .pagination { margin-top :0;}
+        .navbar-inverse {margin: 110px 0}
+    </style>
+
+</head>
+
+<body>
+
+    
+    <div class="container">
+
+        <div class="text-center">
+            <h1>Gems | Android</h1>
+            <h4>User Guide</h4>
+            
+            <!-- APP ICON -->
+            <img src="assets/img/80.png">
+            <br><br>
+        </div>
+
+
+        <div class="row">
+
+        <div class="col-sm-6 col-lg-12">
+                <div class="panel-group" id="accordion-panel">
+
+
+
+
+                    <!-- USEFUL LINKS -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#links">
+                                    <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp; Useful tutorials</a>
+                            </h4>
+                        </div>
+                    <div id="links" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            
+                                • If you need to learn the process of publishing apps on the Google Play Store, read this tutorial: <strong> <a href="https://hubpages.com/technology/How-to-publish-an-Android-app-to-the-Play-Store" target="_blank">How to publish an app to the Play Store</a></strong>
+                                <br><br>
+
+                                • If you  need to learn how to rename a package name, read this: <strong> <a href="https://hubpages.com/technology/Android-How-to-rename-an-app-package" target="_blank">How to rename an app package name</a></strong>
+                                <br><br>
+
+                                • Want to get more info about Parse SDK and its Dashboard on back4app? Check this out: <strong> <a href="https://hubpages.com/technology/Parse-SDK-will-not-shutdown-in-thanks-to-back4app" target="_blank">About Parse SDK and back4app</a></strong>
+                                <br><br>
+
+                                • Want to host Parse Server on Heroku? Check this out: <strong> <a href="https://hubpages.com/technology/How-to-host-Parse-Server-and-its-Dashboard-on-Heroku" target="_blank">Host Parse Server and Dashboard on Heroku</a></strong>
+                                <br><br>
+
+                    </div></div></div><!-- end panel -->
+
+
+
+
+
+
+
+                    <!-- CUSTOMIZATION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#customization">
+                                    <i class="fa fa-cog"></i>&nbsp;&nbsp; Customization</a>
+                            </h4>
+                        </div>
+                        <div id="customization" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                • <strong>User Interface:</strong> If you want to edit the User Interface of this app, you can do so by editing the <code>xml</code> files included in the <code>res/layout</code> folder in the Android Studio’s <code>Design</code> tab. 
+                                
+                                <blockquote>Please always use the latest version of Android Studio.</blockquote>
+
+                                • <strong>Images:</strong> You can easily change App icons, logo, buttons and other images by accessing <code>drawable</code> folder, its path is <code>app/src/main/res/drawable</code>.<br> 
+                                For the App icons, you have to replace the png images included into all the <code>mipmaps</code> folders.
+                                <br><br>
+
+                                • <strong>Terms Of Service HTML file:</strong> You can find an HTML file called <code>tou.html</code> into the <code>assets</code> folder of this Android Studio project, that’s a file you can edit as you wish, since there is <code>APP_NAME</code> here and there, replace it with your app’s name and read it carefully before publishing the app on the Play Store.
+                                <br><br>
+
+                                <strong>IMPORTANT:</strong> You should also check the <code>Privacy Policy</code> statements on the bottom of that file and edit the contact email addres into your own email adress:
+<pre>
+  href= <font color="red"> "mailto:support@yourdomain.com"</font>><font color="red"> support@yourdomain.com</font>
+</pre>
+                                That's important for EU GDPR laws since 25 May 2018.
+                                <div class="well"> 
+                                  In case some user will ask you to delete his/her account, you must enter your Parse Dashboard, search for its <code>objectId</code> or <code>username</code> in all Classes, and delete the rows that contain such objectId in their cells (Pointers included).
+                                </div>
+                                <br><br>
+
+
+
+                                • <strong>Gem images</strong>: There are 6 pre-defined gem images into all the <code>drawable</code> folders, their names are all lowercased and if you check <code>Configs.java</code> there’s an array that has them all:
+                                <br>
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid grey;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #60a0b0; font-style: italic">// IMPORTANT: THE STRINGS DECLARES IN THE ARRAY BELOW AND THE NAME OF THE IMAGES IN THE &#39;drawable&#39; FOLDERS MUST EXACTLY MATCH EACH OTHER</span>
+    <span style="color: #007020; font-weight: bold">public</span> <span style="color: #007020; font-weight: bold">static</span> String <span style="color: #666666">[]</span> gemNames <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+            <span style="color: #4070a0">&quot;gigernaut&quot;</span><span style="color: #666666">,</span>   <span style="color: #60a0b0; font-style: italic">// 10 points</span>
+            <span style="color: #4070a0">&quot;khriptic&quot;</span><span style="color: #666666">,</span>    <span style="color: #60a0b0; font-style: italic">// 20 points</span>
+            <span style="color: #4070a0">&quot;morghon&quot;</span><span style="color: #666666">,</span>     <span style="color: #60a0b0; font-style: italic">// 30 points</span>
+            <span style="color: #4070a0">&quot;tremor&quot;</span><span style="color: #666666">,</span>      <span style="color: #60a0b0; font-style: italic">// 40 points</span>
+            <span style="color: #4070a0">&quot;walwaz&quot;</span><span style="color: #666666">,</span>      <span style="color: #60a0b0; font-style: italic">// 50 points</span>
+            <span style="color: #4070a0">&quot;yalowa&quot;</span><span style="color: #666666">,</span>      <span style="color: #60a0b0; font-style: italic">// 100 points</span>
+    <span style="color: #666666">};</span>
+</pre></div>
+<br>
+
+                                So, in case you want to change the names of the Gems png images in the <code>drawable</code> folders, you can do that but then just remember to replace the names of the gems in that <code>gemNames</code> array as well, all items of that array must exactly match the new names you gave to the images in the <code>drawable</code> folders.<br><br>
+
+                                Same thing if you’ll add new Gem images into the <code>drawable</code> folders, you must add their names (<strong>all lowercased characters</strong>) into the <code>gemNames</code> array as well.
+                                <br><br>
+
+                                For the Gems <strong>points</strong>, just edit the <code>gemPoints</code> array below accordingly to the position (index) of the names in the <code>gemNames</code> array:
+                                <br>
+
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid grey;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #60a0b0; font-style: italic">// YOU CAN EDIT THE POINTS BELOW AS YOU WISH, JUST NOTE THE COMMENTS THAT SHOWS WHICH GEM THE POINTS ARE ABOUT</span>
+    <span style="color: #007020; font-weight: bold">public</span> <span style="color: #007020; font-weight: bold">static</span> Integer<span style="color: #666666">[]</span> gemPoints <span style="color: #666666">=</span> <span style="color: #666666">{</span>
+            <span style="color: #40a070">10</span><span style="color: #666666">,</span>  <span style="color: #60a0b0; font-style: italic">// gigernaut</span>
+            <span style="color: #40a070">20</span><span style="color: #666666">,</span>  <span style="color: #60a0b0; font-style: italic">// khriptic</span>
+            <span style="color: #40a070">30</span><span style="color: #666666">,</span>  <span style="color: #60a0b0; font-style: italic">// morghon</span>
+            <span style="color: #40a070">40</span><span style="color: #666666">,</span>  <span style="color: #60a0b0; font-style: italic">// tremor</span>
+            <span style="color: #40a070">50</span><span style="color: #666666">,</span>  <span style="color: #60a0b0; font-style: italic">// walwaz</span>
+            <span style="color: #40a070">100</span><span style="color: #666666">,</span> <span style="color: #60a0b0; font-style: italic">// yalowa</span>
+    <span style="color: #666666">};</span>
+</pre></div>
+<br>
+<br>
+
+
+                                • <strong>Sounds:</strong> There are a few <code>mp3</code> files included in the <code>assets</code> folder, you can replace those sounds with your own ones, just use the same file names so you won’t need to add a single line of code.
+                                <br>
+                    
+                    </div></div></div><!-- end panel -->
+
+
+
+
+
+
+
+                    <!-- CONFIGURATION -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#configuration"> 
+                                    <i class="fa fa-edit"></i>&nbsp;&nbsp; Configuration</a>
+                            </h4>
+                        </div>
+                        <div id="configuration" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                Head over <code>Configs.java</code> file and check out the <strong><font color="green">comments</font></strong> in such file which will help you editing this template.
+                    
+                    </div></div></div><!-- end panel -->
+
+
+
+
+
+
+
+
+                    <!-- PARSE DATABASE SETUP ON BACK4APP -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#parse">
+                                    <i class="fa fa-database"></i>&nbsp;&nbsp; Parse database setup on back{4}app</a>
+                            </h4>
+                        </div>
+                        <div id="parse" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                                Before using the app, you must create your own App on your <a href="https://dashboard.back4app.com/apps" target="_blank">back4app Dashboard</a>. The link we’ve provided above points already to the back4app's Dashboard, but in case you don’t have an account on back4app.com yet, you’ll be redirected to the Sign Up page.
+                                <br><br>
+
+                                Once you’ll be signed in on back4app, enter your Dashboard and simply click on the <strong>Build new app</strong> button, give your app a name and a brief description (optional), click <code>Next</code> and you’ll be redirected to the settings page. <br>
+                                Click on <strong>SETTINGS</strong> in the <code>Core Settings</code> box, copy the <code>App ID</code> and <code>Client Key</code> strings and replace the existing ones into <code>Configs.java</code>
+                                <br><br>
+
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/build-new-app.jpg"></div>
+                                <div class="thumbnail"><img src="assets/img/appclientkey.jpg"></div>
+                            </div>
+
+                            Strings to replace in the Configs file in the app's project:<br>
+<pre>
+    public static String PARSE_APP_ID = "OGFkSBZl68gRInEINoxKngV9LRpkKWPme97WUKKV";  
+    public static String PARSE_CLIENT_KEY = "2NcNlYDVRDgrTSpXGDMsEL0p3UAEbNeibILpb3HM";
+</pre>
+<br><br>
+
+                            <strong>That’s it, you can start using your app, back4app provides also the classic Parse dashboard where you can edit records manually.</strong>
+                            <br><br>
+
+
+                        
+                            <div class="well">
+                                Please note that Parse SDK will automatically create all Classes and data in your own Parse Dashboard while using the app, so you don't need to manually create anything.
+                            </div>
+
+                    </div></div></div><!-- end panel -->
+
+
+
+
+
+
+
+
+                    <!-- FACEBOOK ANDROID LOGIN SETUP -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#facebook">
+                                    <i class="fa fa-facebook"></i>&nbsp;&nbsp; Facebook login setup</a>
+                            </h4>
+                        </div>
+                        <div id="facebook" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            1. Create your own Facebook App here: <a href="https:/developers.facebook.com/apps/" target="_blank">Facebook developer console</a><br>
+                            2. Open your <a href="https://developers.facebook.com/apps" target="_blank">Facebook App Dashboard</a> and select your application.<br>
+                            3. Select <strong>Settings</strong> from the left navigation.<br>
+                            4. Click <strong>Add Platform</strong> at the bottom of the page and select <strong>Android</strong>.<br>
+                            5. Locate your package name in Android Studio and copy it to your clipboard.<br>
+                            6. Return to the <strong>App Dashboard</strong> and paste your <code>package name</code> into the <strong>Google Play
+                                 Package Name</strong> field.<br>
+                            7. Type <code>Intro</code> in the <strong>Class Name</strong> filed.<br>
+                            8. Enable <strong>Single Sign On</strong>.<br>
+                            9. Now run your app via Android Studio, either on the Emulator or real device, do not
+                                login, just wait for the app to print a Key Hash in your Logcat. You should get something like this (just an example):
+<pre>I/log-: keyhash: U05jRHlAyYvJZCAuPfKI+/l6fzQ=</pre>
+                            10. Copy that key hash string in your clipboard and paste it in the <strong>Key Hashes</strong> filed.<br>
+                            11. Click <strong>Save Changes</strong> at the bottom of the App Dashboard window.<br>
+
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/android-facebook-login.jpg"></div>
+                            </div>
+                            <br><br>
+
+
+                            12. Enter your app <strong>Server Settings</strong> on back4app, scroll down to the <strong>Facebook Login</strong> section and click <strong>SETTINGS</strong><br>
+
+                             <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/server-settings.jpg"></div>
+                            </div>
+                            <br><br>
+
+
+                            13. Paste your <code>Facebook App ID</code> in the empty filed and click the <strong>+</strong> button, then <strong>SAVE</strong><br>
+                            
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/facebook-login-save.jpg"></div>
+                            </div>
+                            <br><br>
+                
+
+                            14. Now open <code>strings.xml</code> in Android Studio and replace the existing ID with your own <code>Facebook App ID</code>:<br>
+
+<pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>string</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>facebook_app_id</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>267577963708745<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>string</span><span style='color:#a65700; '>></span>
+</pre>
+<br><br>
+                            
+                            15. Lastly, enter <strong>App Review</strong> and make your app public:
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/fblogin2.png"></div>
+                            </div>
+                            <br><br>
+
+
+                            <strong>You’re done with setting up Facebook Login in this app, now you can test it.</strong>
+                            <br>
+
+
+                    </div></div></div><!-- end panel -->
+
+
+
+
+
+
+
+
+
+                    <!-- GOOGLE MAPS API -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#googlemaps">
+                                    <i class="fa fa-map"></i>&nbsp;&nbsp; Google Maps API</a>
+                            </h4>
+                        </div>
+                        <div id="googlemaps" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            <h4><a href="https://developers.google.com/maps/documentation/android-api/signup" target="_blank">
+                            Click here to obtain your own Google Maps API</a></h4>
+                            <br>
+
+                            Click on <strong>GET A KEY</strong> and create your app (unless you’ve already done it on your Google Developer console). <br>
+                            Copy the <code>Google Map Android API Key</code>, then replace the string into <code>google_map_api.xml</code> file with your own Key.
+                            <br><br><br>
+
+<pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>string</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>google_maps_key</span><span style='color:#800000; '>"</span> <span style='color:#274796; '>templateMergeStrategy</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>preserve</span><span style='color:#800000; '>"</span>  
+<span style='color:#274796; '>translatable</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>false</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span> 
+AIzaSyAsQMVcoaWZKUjVtrWMi2BZLCVfoOWIijc
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>string</span><span style='color:#a65700; '>></span>
+</pre>
+<br><br>
+
+                    </div></div></div><!-- end panel -->
+                  
+
+
+
+
+
+                    <!-- ADMOB BANNERS SETUP -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#admob">
+                                    <i class="fa fa-bullhorn"></i>&nbsp;&nbsp;  AdMob banners setup</a>
+                            </h4>
+                        </div>
+                        <div id="admob" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            You must create a Banner Unit ID on<a href="https://apps.admob.com/v2/home" target="_blank">apps.admob.com</a> in order to get its Unit ID and replace the string in <code>res/strings.xml</code> with your own ID, in order to make your AdMob banners be displayed in the app.
+
+<pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>string</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>ADMOB_BANNER_UNIT_ID</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>ca-app-pub-9733347540588953/7805958028<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>string</span><span style='color:#a65700; '>></span>
+</pre>
+<br><br>
+
+                    </div></div></div><!-- end panel -->
+
+
+
+
+
+
+
+                    <!-- FAQs -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#faqs">
+                                    <i class="fa fa-question-circle"></i>&nbsp;&nbsp;  FAQs</a>
+                            </h4>
+                        </div>
+                        <div id="faqs" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            <ul>
+                                <li>
+                                    <h4>About Parse SDK and back4app</h4>
+                                    Read this article for more info about back4app and Parse SDK: <a href="https://hubpages.com/technology/Parse-SDK-will-not-shutdown-in-thanks-to-back4app" target="_blank">About Parse SDK and back4app</a>
+                                </li>
+                                <br>
+
+                                <li>
+                                    <h4>Can I host Parse Server on my own server?</h4>
+                                    Yes, although I don’t provide support for the setup process, you can read the official Guide here: <a href="http://parseplatform.org" target="_blank">http://parseplatform.org</a>
+                                </li>
+                                <br>
+
+                                <li>
+                                    <h4>What about free support for this template?</h4>
+                                    I can offer free support for bugs encountered in the original code. Instead, if you’ve edited the code and messed something up with it, I may apply some fee to fix it either via TeamViewer or by checking your app project files directly on my computer.   
+                                </li>
+                                <br>
+
+                                <li>
+                                    <h4>How do I rename the app’s package name?</h4>
+                                    Read this tutorial to learn how to rename a package name: <a href="https://hubpages.com/technology/Android-How-to-rename-an-app-package" target="_blank">How to rename an Android app's package name</a>
+                                </li>
+                                <br>
+
+                                <li>
+                                    <h4>Should I use the latest version of Android Studio to edit this template?</h4>
+                                    Yes, I usually update all my apps to the latest version of their IDE and you also should make sure you’ve updated the Android Tools to their latest version by the Android SDK manager.
+                                </li>
+                                <br>
+
+                                <li>
+                                    <h4>How do I remove AdMob banner ads?</h4>
+                                    1. Enter the <code>.xml</code> files where there’s an <code>com.google.android.gms.ads.AdView</code> and remove its code:
+                                    <br>
+
+<pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>com.google.android.gms.ads.AdView</span>
+<span style='color:#007997; '>android</span><span style='color:#800080; '>:</span><span style='color:#274796; '>id</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>@+id/admobBanner</span><span style='color:#800000; '>"</span>
+<span style='color:#007997; '>android</span><span style='color:#800080; '>:</span><span style='color:#274796; '>layout_width</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>wrap_content</span><span style='color:#800000; '>"</span>
+<span style='color:#007997; '>android</span><span style='color:#800080; '>:</span><span style='color:#274796; '>layout_height</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>wrap_content</span><span style='color:#800000; '>"</span>
+<span style='color:#007997; '>ads</span><span style='color:#800080; '>:</span><span style='color:#274796; '>adSize</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>BANNER</span><span style='color:#800000; '>"</span>
+<span style='color:#007997; '>ads</span><span style='color:#800080; '>:</span><span style='color:#274796; '>adUnitId</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>@string/ADMOB_BANNER_UNIT_ID</span><span style='color:#800000; '>"</span>
+<span style='color:#007997; '>android</span><span style='color:#800080; '>:</span><span style='color:#274796; '>layout_alignParentBottom</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>true</span><span style='color:#800000; '>"</span>
+<span style='color:#007997; '>android</span><span style='color:#800080; '>:</span><span style='color:#274796; '>layout_centerHorizontal</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>true</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>com.google.android.gms.ads.AdView</span><span style='color:#a65700; '>></span>
+</pre>
+<br>
+                                    
+                                    2. Enter the <code>.java</code> files where there’s an <code>AdRequest</code> instance into its <code>onCreate()</code> method and remove its code:
+                                    <br>
+
+<pre style='color:#000000;background:#ffffff;'>// Init AdMob banner
+AdView mAdView = (AdView) findViewById(R.id.admobBanner);
+AdRequest adRequest = new AdRequest.Builder().build();
+mAdView.loadAd(adRequest);
+</pre>
+<br>
+
+                                    3. Lastly, remove the <code>play-services-ads</code> compile reference in the <code>build.gradle</code> file:
+                                    <br>
+
+<pre>compile ‘com.google.android.gms:play-services-ads:+'</pre>
+<br>
+                            
+
+                                </li>
+                            </ul>
+
+
+                    </div></div></div><!-- end panel -->
+
+
+
+
+
+
+
+                      <!-- GREETINGS AND RATE APP -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#greetings">
+                                    <i class="fa fa-star"></i>&nbsp;&nbsp;  App Rating means great support!</a>
+                            </h4>
+                        </div>
+                        <div id="greetings" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            if you like this template, please don’t forget to rate it on your <a href="https://codecanyon.net/downloads" target="_blank"><strong>Downloads page</strong></a> on CodeCanyon!
+                            <br><br>
+
+
+                    </div></div></div><!-- end panel -->
+
+
+
+                </div><!-- end accordion group -->
+            </div>
+
+
+        </div><!-- end row -->
+
+
+</div>
+
+
+
+    <footer class="text-center">
+        <img src="assets/img/logo_100.png">
+        <br><br>
+        <p>
+            Made with <font color="#e25353"><i class="fa fa-heart"></i></font> by
+            <a href="http://cubycode.com" target="_blank"><code>cubycode</code></a>
+        </p>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Main Scripts-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Plan UI elements -->
+    <script src="assets/js/plan.ui.js"></script>
+    <!-- Bootstrap Select -->
+    <script src="assets/js/bootstrap-select.min.js"></script>
+
+    <!-- Demo -->
+    <script src="assets/js/application.js"></script>
+
+</body>
+</html>

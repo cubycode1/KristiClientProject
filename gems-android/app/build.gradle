@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.domain.gems"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // Enabling multidex support.
+        multiDexEnabled true
+
+        // For Geocoding with JSON
+        useLibrary 'org.apache.http.legacy'
+
+    }
+
+    /*
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    */
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.squareup.okhttp3:okhttp:+'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:multidex:+'
+    implementation 'com.parse:parse-android:1.16.0'
+    implementation 'com.parse.bolts:bolts-android:1.+'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.+'
+    implementation 'com.parse:parsefacebookutils-v4-android:1.10.3@aar'
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+}
