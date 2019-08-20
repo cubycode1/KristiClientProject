@@ -281,7 +281,7 @@
 
 
 
-                    <!-- FACEBOOK ANDROID LOGIN SETUP -->
+                     <!-- FACEBOOK ANDROID LOGIN SETUP -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -294,23 +294,28 @@
 
                             1. Create your own Facebook App here: <a href="https:/developers.facebook.com/apps/" target="_blank">Facebook developer console</a><br>
                             2. Open your <a href="https://developers.facebook.com/apps" target="_blank">Facebook App Dashboard</a> and select your application.<br>
-                            3. Select <strong>Settings</strong> from the left navigation.<br>
+                            3. Select <strong>Settings</strong> from the left navigation and select <strong>Basic</strong> type <strong>Privacy Policy</strong> URL and select <strong>Category</strong>.<br>
+							<div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/step_one.png"></div>
+                            </div>
+                            <br><br>
                             4. Click <strong>Add Platform</strong> at the bottom of the page and select <strong>Android</strong>.<br>
                             5. Locate your package name in Android Studio and copy it to your clipboard.<br>
                             6. Return to the <strong>App Dashboard</strong> and paste your <code>package name</code> into the <strong>Google Play
                                  Package Name</strong> field.<br>
-                            7. Type <code>Intro</code> in the <strong>Class Name</strong> filed.<br>
+                            7. Type <code>Login</code> in the <strong>Class Name</strong> filed.<br>
                             8. Enable <strong>Single Sign On</strong>.<br>
                             9. Now run your app via Android Studio, either on the Emulator or real device, do not
                                 login, just wait for the app to print a Key Hash in your Logcat. You should get something like this (just an example):
 <pre>I/log-: keyhash: U05jRHlAyYvJZCAuPfKI+/l6fzQ=</pre>
                             10. Copy that key hash string in your clipboard and paste it in the <strong>Key Hashes</strong> filed.<br>
-                            11. Click <strong>Save Changes</strong> at the bottom of the App Dashboard window.<br>
-
-                            <div class="col-lg-12 col-sm-6 ">
-                                <div class="thumbnail"><img src="assets/img/android-facebook-login.jpg"></div>
+							 <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/step_two.png"></div>
                             </div>
                             <br><br>
+                            11. Click <strong>Save Changes</strong> at the bottom of the App Dashboard window.<br>
+
+                           
 
 
                             12. Enter your app <strong>Server Settings</strong> on back4app, scroll down to the <strong>Facebook Login</strong> section and click <strong>SETTINGS</strong><br>
@@ -331,15 +336,19 @@
 
                             14. Now open <code>strings.xml</code> in Android Studio and replace the existing ID with your own <code>Facebook App ID</code>:<br>
 
-<pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>string</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>facebook_app_id</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>267577963708745<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>string</span><span style='color:#a65700; '>></span>
+<pre style='color:#000000;background:#ffffff;'><span style='color:#a65700; '>&lt;</span><span style='color:#5f5035; '>string</span> <span style='color:#274796; '>name</span><span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>facebook_app_id</span><span style='color:#800000; '>"</span><span style='color:#a65700; '>></span>1373896799328580<span style='color:#a65700; '>&lt;/</span><span style='color:#5f5035; '>string</span><span style='color:#a65700; '>></span>
 </pre>
 <br><br>
                             
-                            15. Lastly, enter <strong>App Review</strong> and make your app public:
+
+                            15. Lastly make your app public:
+                            
                             <div class="col-lg-12 col-sm-6 ">
-                                <div class="thumbnail"><img src="assets/img/fblogin2.png"></div>
+                                <div class="thumbnail"><img src="assets/img/step_three.png"></div>
                             </div>
                             <br><br>
+
+
 
 
                             <strong>You’re done with setting up Facebook Login in this app, now you can test it.</strong>
@@ -347,8 +356,6 @@
 
 
                     </div></div></div><!-- end panel -->
-
-
 
 
 
