@@ -82,6 +82,10 @@
         <activity android:name=".OtherUserIdentity"/>
         <activity android:name=".Identity">
         </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
