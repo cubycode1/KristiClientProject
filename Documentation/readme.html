@@ -132,6 +132,8 @@
 
                     <!-- CUSTOMIZATION -->
                     <div class="panel panel-default">
+					
+					
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#customization">
@@ -204,6 +206,102 @@
                                 <br>
                     
                     </div></div></div><!-- end panel -->
+
+
+
+
+ <!-- PUSH NOTIFICATIONS SETUP -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-panel" href="#push">
+                                    <i class="fa fa-bell"></i>&nbsp;&nbsp; Push Notifications setup</a>
+                            </h4>
+                        </div>
+                        <div id="push" class="panel-collapse collapse">
+                            <div class="panel-body">
+
+                            1. Add your project in your <a href="https://console.firebase.google.com/" target="_blank"><strong>Firebase console</strong></a> by giving it a name (usually the new name you gave to your app), and click <strong>CREATE PROJECT</strong>.
+                            <br>
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/android-push1.png"></div>
+                                <div class="thumbnail"><img src="assets/img/step-one-add-project.png"></div>
+                            </div>
+
+                            2. After Firebase has created your Project, click <code>Add Firebase to your Android app</code>.<br>
+                            a) Paste your new app's <code>package name</code> in the first field<br>
+                            b) Type the name of your app in the second field.<br>
+                            c) Ingore ther <code>SHA-1</code> field and just click <strong>REGISTER APP</strong>
+                            <br><br>
+
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/android-push3.png"></div>
+                            </div>
+                            <br><br>
+                            
+                            3. Download the the <code>google-services.json</code> file, after you've downloaded it, click <strong>NEXT</strong>
+                            <br><br>
+                            
+                            4. In the <strong>Add Firebase SDK</strong> section, ingore everything and click <strong>NEXT</strong>
+                            <br><br>
+
+                            5. In the last section, just click <code>Skip this step</code>. You'll be redirected to the <strong>Overview</strong> page of your new Firebase project.
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/step-five-verify-app.png"></div>
+								<div class="thumbnail"><img src="assets/img/android-push4.png"></div>
+								
+                            </div>
+                            <br><br>
+
+                            6. Click on the settings icon -> Project settings:
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/android-push5.png"></div>
+                            </div>
+                            <br><br> 
+
+                            7. Click the <strong>CLOUD MESSAGING</strong> tab and check your <code>Server Key</code> and <code>Sender ID</code> strings, you'll need to paste them in the code and Android Push Notifications section on back4app.
+                            <br>
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/android-push6.png"></div>
+                            </div>
+                            <br><br>
+                            8. Enter the <code>Android Push Notifications</code> section of your app on back4app and click <strong>EDIT</strong>. Then paste your <code>Sender ID</code> and <code>Server key</code> into their relatyive fields.<br>
+                            Lastly, click <strong>NEXT</strong>.
+                            <br>
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/android-push7.png"></div>
+                                <div class="thumbnail"><img src="assets/img/android-push8.png"></div>
+                            </div>
+                            <br><br>
+
+                            10. Open the <code>app</code> folder inside your Android Studio project folder and drag the <code>google-services.json</code> file you've previously downloaded from Firebase website, overwrite the existing one.
+                            <br><br>
+
+                            9. Now enter <code>AndroidManifest.xml</code> in Android Studio, check all the <font color="green">comments</font> that start with <font color="green"><em><strong>IMPORTANT: Replace...</em></strong></font> and do what they say.<br><br><br>
+
+
+                            11. Enter <code>Home.java</code> and replace <strong>"877986214479"</strong> with your own <code>Sender ID</code> in this line of code, into <code>onStart()</code>:<br>
+
+<pre>
+    // IMPORTANT: REPLACE "877986214479" WITH YOUR OWN GCM SENDER ID  
+    installation.put("GCMSenderId", <font color="green"><strong>"877986214479"</strong></font>);
+</pre>
+<br><br>
+
+                            12. Upload the <code>main.js</code> file into the <strong>CloudCode</strong> container of your app from your back4app dashboard. Click <strong>SETTINGS</strong> to enter it, then  <strong>Choose file</strong> to upload <code>main.js</code> into CloudCode. Lastly, click <strong>SAVE</strong><br>
+
+                            <div class="col-lg-12 col-sm-6 ">
+                                <div class="thumbnail"><img src="assets/img/mainjs1.jpg"></div>
+                                <div class="thumbnail"><img src="assets/img/mainjs2.jpg"></div>
+                            </div>
+                            <br><br><br>
+
+
+                            13. Wait for about half an hour, the time to Google to process Cloud Messaging with back4app, then you will be able to send Push Notifications to all registered devices by using the app.<br>
+
+
+                    </div></div></div><!-- end panel -->
+                  
 
 
 
