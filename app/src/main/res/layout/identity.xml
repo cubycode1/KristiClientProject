@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:focusableInTouchMode="true"
+    tools:context=".Identity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.9"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background_image_option_bright_c" />
+
+    <TextView
+        android:id="@+id/idenTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/mont_demo_heavy"
+        android:text="ACCOUNT"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/idenAvatarImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/idenUsernameTxt"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/main_app_logo"
+        app:civ_border_color="#fff"
+        app:civ_border_width="1dp" />
+
+    <Button
+        android:id="@+id/idenLogoutButt"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/logout_butt" />
+
+    <Button
+        android:id="@+id/idenSaveImg"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/idenLogoutButt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/save"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/idenSaveButt"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/idenLogoutButt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/idenUsernameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/mont_demo_extra_light"
+        android:gravity="center"
+        android:hint="Type your username"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="Loading..."
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idenAvatarImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/mont_demo_extra_light"
+        android:text="Change"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addressCityET"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/mont_demo_extra_light"
+        android:gravity="center"
+        android:hint="Nil"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="Lahore, Pakistan"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/spTeams"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/addressCityET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_shape"
+        android:fontFamily="@font/mont_demo_heavy"
+        android:gravity="center_vertical"
+        android:text="@string/show_teams"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/idenStatsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spTeams"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mont_demo_heavy"
+        android:gravity="center"
+        android:text="QUIZ HISTORY: \nSCORE: "
+        android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/idenGemsCollectedListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/idenStatsTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp" />
+
+    <Button
+        android:id="@+id/idenShareButt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/idenStatsTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/share"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.7"
+        android:background="@color/black_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tab_one"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/tab_home"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Gems"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_two"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_leaderboard"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Top Hunters"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_three"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_identity"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_four"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_leaderboard"
+            android:backgroundTint="#fff"
+            android:paddingTop="30dp"
+            android:text="Statistics"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_five"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_identity"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Add Team"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

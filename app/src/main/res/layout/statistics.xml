@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".Leaderboards">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.9"
+        android:scaleType="centerCrop"
+        ads:srcCompat="@drawable/background_image_option_bright_c"/>
+
+    <TextView
+        android:id="@+id/thTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Statistics"
+        android:textColor="#fff"
+        android:fontFamily =  "@font/mont_demo_heavy"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/thPullDownTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thTitleTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Pull down to refresh"
+        android:textColor="#fff"
+        android:fontFamily =  "@font/mont_demo_extra_light"
+        android:textSize="9sp"
+        android:textStyle="italic"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/admobBanner"
+        android:layout_marginTop="64dp"
+        >
+
+        <ListView
+            android:id="@+id/thTopListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admobBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ADMOB_BANNER_UNIT_ID"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout2"
+        android:background="@color/black_color"
+        android:alpha="0.7"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/tab_one"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/tab_home"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="POIs"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp"/>
+
+        <Button
+            android:id="@+id/tab_two"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/tab_leaderboard"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Leaderboard"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp"/>
+
+        <Button
+            android:id="@+id/tab_three"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/tab_identity"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp"/>
+
+        <Button
+            android:id="@+id/tab_four"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/tab_leaderboard"
+            android:backgroundTint="#fff"
+            android:paddingTop="30dp"
+            android:text="Statistics"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="8dp"/>
+
+        <Button
+            android:id="@+id/tab_five"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/tab_identity"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Add Team"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

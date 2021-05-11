@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardView.Dark"
+    android:alpha="0.8"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ctAvatarImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/main_app_logo"
+        card_view:civ_border_width="1dp"
+        card_view:civ_border_color="#fff"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ctAvatarImg"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/ccGemNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily =  "@font/mont_demo_heavy"
+                android:textStyle="bold"
+                android:text="Loading..."
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:id="@+id/rl_gems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ccGemNameTxt"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/tv_gems_hard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mont_demo_heavy"
+                    android:text="Quiz"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_gems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily =  "@font/mont_demo_heavy"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:text="0"
+                    android:layout_below="@id/tv_gems_hard"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ccGemNameTxt"
+                android:layout_toRightOf="@id/rl_gems"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/tv_points_hard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mont_demo_heavy"
+                    android:text="Points"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily =  "@font/mont_demo_heavy"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:text="0"
+                    android:layout_below="@id/tv_gems_hard"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ccGemNameTxt"
+                android:layout_toRightOf="@id/rl_points"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/tv_average_hard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mont_demo_heavy"
+                    android:text="Average"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily =  "@font/mont_demo_heavy"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:text="0"
+                    android:layout_below="@id/tv_gems_hard"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
