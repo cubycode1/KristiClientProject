@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- IMPORTANT: REPLACE THE KEY BELOW WITH YOUR OWN ONE, YOU CAN GET IT ON YOUR GOOGLE DEVELOPERS CONSOLE: https://developers.google.com/maps/documentation/android-api/signup
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve"
+        translatable="false">
+        AIzaSyAsQMVcoaWZKUjVtrWMi2BZLCVfoOWIijc
+    </string>
+
+
+</resources>

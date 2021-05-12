@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".GemsMap">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        ads:srcCompat="@drawable/background_image_option_bright_c"/>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/mapView"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_above="@+id/admobBanner"
+              android:layout_alignParentStart="true"
+              tools:context=".GemsMap"
+              android:layout_below="@+id/linearLayout"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admobBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ADMOB_BANNER_UNIT_ID"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/gmTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TARGET MAP "
+        android:textColor="#fff"
+        android:fontFamily =  "@font/mont_demo_heavy"
+        android:font = "@font/mont_demo_heavy"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/gmBackutt"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="Back "
+        android:textColor="#fff"
+        android:fontFamily =  "@font/mont_demo_heavy"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/gmInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmTitleTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily =  "@font/mont_demo_extra_light"
+        android:textStyle="bold"
+        android:text="QUIZ | Points: 0"
+        android:textColor="#fff"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/gmTraceRouteButt"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/gmBackutt"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/route_butt"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/gmInfoTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/hybridButt"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.19"
+            android:background="@android:color/transparent"
+            android:text="Hybrid"
+            android:fontFamily =  "@font/mont_demo_extra_light"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/standardButt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:text="Standard"
+            android:textAllCaps="false"
+            android:fontFamily =  "@font/mont_demo_extra_light"
+            android:textStyle="bold"
+            android:textColor="#999999"/>
+
+        <Button
+            android:id="@+id/satelliteButt"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.47"
+            android:background="@android:color/transparent"
+            android:text="Satellite"
+            android:fontFamily =  "@font/mont_demo_extra_light"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#999999"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

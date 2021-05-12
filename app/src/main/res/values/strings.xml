@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BioNavigator</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN BANNER UNIT ID YOU'LL GET FROM: http://apps.admob.com -->
+    <string name="ADMOB_BANNER_UNIT_ID">ca-app-pub-3120536913205473/5975042732</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN FACEBOOK APP ID YOU'LL GET ON https://developers.facebook.com/apps/ -->
+    <string name="facebook_app_id">2921870238044080</string>
+    <string name="submit_team">Submit Team</string>
+    <string name="show_teams">Show Teams</string>
+    <string name="add_member">Add Member</string>
+    <string name="delete_member">Delete Member</string>
+    <string name="search_gem">Search Gem</string>
+
+
+</resources>
