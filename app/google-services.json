@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "953415244341",
+    "firebase_url": "https://cubycode-android-apps.firebaseio.com",
+    "project_id": "cubycode-android-apps",
+    "storage_bucket": "cubycode-android-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953415244341:android:2e5ee217e664bac1a8af7c",
+        "android_client_info": {
+          "package_name": "com.domain.gems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953415244341-3g20tcf80blk4emln8h2rpg3n0fqlm2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.domain.gems",
+            "certificate_hash": "42d304ae1e48adf62f64ebc2b432f83c1592819f"
+          }
+        },
+        {
+          "client_id": "953415244341-juf6fdbm1ulfhoi1589htohv4igbok2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVCNEyIIBD8Jz3zWzEJNW26SUPZnIbD6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953415244341-juf6fdbm1ulfhoi1589htohv4igbok2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

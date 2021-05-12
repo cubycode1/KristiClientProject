@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".Leaderboards">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        ads:srcCompat="@drawable/background_image_option_bright_c" />
+
+
+    <TextView
+        android:id="@+id/statTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/mont_demo_heavy"
+        android:text="Add a Team"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/etTeam"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="#be000000"
+        android:fontFamily="@font/mont_demo_heavy"
+        android:gravity="center_vertical"
+        android:hint="Team Title"
+        android:imeOptions="actionNext"
+        android:inputType="none"
+        android:paddingStart="50dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#f1f1f1"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bSubmitTeam"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etTeam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_shape"
+        android:fontFamily="@font/mont_demo_heavy"
+        android:gravity="center_vertical"
+        android:text="@string/submit_team"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+
+    <!-- TAB BAR -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.7"
+        android:background="@color/black_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tab_one"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/tab_home"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Gems"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_two"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_leaderboard"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Top Hunters"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_three"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_identity"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Account"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_four"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_leaderboard"
+            android:backgroundTint="#fff"
+            android:paddingTop="30dp"
+            android:text="Statistics"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/tab_five"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_identity"
+            android:backgroundTint="#999"
+            android:paddingTop="30dp"
+            android:text="Add Team"
+            android:textAllCaps="false"
+            android:textColor="#999"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+</RelativeLayout>
